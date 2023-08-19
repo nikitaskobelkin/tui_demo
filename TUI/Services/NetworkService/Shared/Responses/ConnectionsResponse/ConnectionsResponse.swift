@@ -17,11 +17,11 @@ struct Connection: Codable {
 // MARK: - Coordinates
 
 struct Coordinates: Codable {
-    let from, to: From
+    let from, to: LocationCoordinates
 }
 
 // MARK: - From
 
-struct From: Codable {
+struct LocationCoordinates: Codable {
     let lat, long: Double
 }

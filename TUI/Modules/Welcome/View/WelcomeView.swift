@@ -8,50 +8,58 @@ struct WelcomeView: View {
         ZStack {
             Color.background.ignoresSafeArea(.all)
             ScrollView {
-                VStack {
+                VStack(spacing: .x4) {
                     VStack(spacing: .x2) {
                         HStack(spacing: .x2) {
                             VStack(alignment: .leading, spacing: .x2) {
                                 PointButtonView(
                                     title: SearchType.from.title,
-                                    text: viewModel.first,
+                                    text: viewModel.from,
                                     action: {
                                         searchType = .from
                                     }
                                 )
                                 PointButtonView(
                                     title: SearchType.to.title,
-                                    text: viewModel.first,
+                                    text: viewModel.to,
                                     action: {
                                         searchType = .to
                                     }
                                 )
                             }
                             Spacer()
-                            Button(action: {}) {
+                            Button(action: viewModel.swap) {
                                 IconView(name: .arrow_up_arrow_down, fontSize: .x3)
                             }
                         }
-                        Button("Show cheapest") {
-                            // TODO: 
+                        Button(Localization.showButtonTitle.value) {
+                            viewModel.findCheapest()
                         }
                         .buttonStyle(PrimaryButton(maxWidth: .infinity))
                     }
                     .frame(maxWidth: .infinity)
                     .modifier(Block())
-                    .padding(.all, .x2)
+                    if viewModel.shouldShowResult {
+                        RouteResultView(route: viewModel.cheapest)
+                            .isLoading(viewModel.isLoading)
+                    }
                     Spacer()
                 }
+                .padding(.all, .x2)
             }
             .sheet(item: $searchType) { type in
                 SearchResultView(
-                    viewModel: SearchResultViewModel(selected: $viewModel.first, cities: viewModel.cities),
+                    viewModel: SearchResultViewModel(
+                        selected: type == .from ? $viewModel.from : $viewModel.to,
+                        cities: viewModel.cities
+                    ),
                     title: type.title
                 )
             }
             .onAppear {
                 viewModel.fetchData()
             }
+            .isLoading(viewModel.isLoading)
         }
     }
 }

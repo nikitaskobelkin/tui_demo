@@ -12,9 +12,6 @@ final class SearchResultViewModel: ObservableObject {
     }
 
     var result: [String] {
-        if query.isEmpty {
-            return cities
-        }
         return cities.filter { $0.lowercased().contains(query.lowercased()) }
     }
 }

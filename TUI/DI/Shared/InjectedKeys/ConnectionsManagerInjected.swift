@@ -2,11 +2,11 @@ import Foundation
 
 extension InjectedValues {
     var connectionsManager: ConnectionsManagerProtocol {
-        get { Self[ConnectionManagerKey.self] }
-        set { Self[ConnectionManagerKey.self] = newValue }
+        get { Self[ConnectionsManagerKey.self] }
+        set { Self[ConnectionsManagerKey.self] = newValue }
     }
 }
 
-private struct ConnectionManagerKey: InjectionKey {
+private struct ConnectionsManagerKey: InjectionKey {
     static var currentValue: ConnectionsManagerProtocol = ConnectionsManager()
 }

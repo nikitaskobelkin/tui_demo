@@ -14,11 +14,23 @@ struct SearchResultView: View {
                     .modifier(BasicTextField(value: $viewModel.query))
                     .padding(.horizontal, .x3)
                 Divider()
-                List(viewModel.result, id: \.self) { item in
-                    SearchResultItem(item: item, action: {
-                        viewModel.selected = item
+                if viewModel.query.isEmpty {
+                    SearchResultItem(item: viewModel.selected) {
                         dismiss()
-                    })
+                    }
+                    .padding(.horizontal, .x3)
+                    Spacer()
+                } else if viewModel.result.isEmpty {
+                    NotFoundView()
+                        .frame(maxHeight: .infinity)
+                    Spacer()
+                } else {
+                    List(viewModel.result, id: \.self) { item in
+                        SearchResultItem(item: item) {
+                            viewModel.selected = item
+                            dismiss()
+                        }
+                    }
                 }
             }
         }

@@ -51,6 +51,17 @@
 		8D4A02022A902A580067EE1E /* SearchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A02012A902A580067EE1E /* SearchType.swift */; };
 		8D4A02072A902B8A0067EE1E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D4A02042A902B8A0067EE1E /* Localizable.strings */; };
 		8D4A02082A902B8A0067EE1E /* LocalizationKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A02062A902B8A0067EE1E /* LocalizationKeys.swift */; };
+		8D4A020B2A902E290067EE1E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A020A2A902E280067EE1E /* LocationManager.swift */; };
+		8D4A02102A9034430067EE1E /* LocationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A020F2A9034430067EE1E /* LocationError.swift */; };
+		8D4A02132A90346F0067EE1E /* LocationManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A02122A90346F0067EE1E /* LocationManagerProtocol.swift */; };
+		8D4A02152A90350D0067EE1E /* LocationManagerInjected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A02142A90350D0067EE1E /* LocationManagerInjected.swift */; };
+		8D4A02172A90392F0067EE1E /* NotFoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A02162A90392F0067EE1E /* NotFoundView.swift */; };
+		8D4A02192A9047C80067EE1E /* IsLoadingModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A02182A9047C80067EE1E /* IsLoadingModifier.swift */; };
+		8D4A021B2A9049550067EE1E /* RouteResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A021A2A9049550067EE1E /* RouteResultView.swift */; };
+		8D4A021D2A904FE00067EE1E /* RouteMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A021C2A904FE00067EE1E /* RouteMapView.swift */; };
+		8D4A02202A9134FD0067EE1E /* RouteMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A021F2A9134FD0067EE1E /* RouteMapViewModel.swift */; };
+		8D4A02252A9187D30067EE1E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A02242A9187D30067EE1E /* MapView.swift */; };
+		8D4A02272A9188730067EE1E /* MapModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A02262A9188730067EE1E /* MapModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +129,17 @@
 		8D4A02012A902A580067EE1E /* SearchType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchType.swift; sourceTree = "<group>"; };
 		8D4A02052A902B8A0067EE1E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8D4A02062A902B8A0067EE1E /* LocalizationKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationKeys.swift; sourceTree = "<group>"; };
+		8D4A020A2A902E280067EE1E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		8D4A020F2A9034430067EE1E /* LocationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationError.swift; sourceTree = "<group>"; };
+		8D4A02122A90346F0067EE1E /* LocationManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerProtocol.swift; sourceTree = "<group>"; };
+		8D4A02142A90350D0067EE1E /* LocationManagerInjected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerInjected.swift; sourceTree = "<group>"; };
+		8D4A02162A90392F0067EE1E /* NotFoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotFoundView.swift; sourceTree = "<group>"; };
+		8D4A02182A9047C80067EE1E /* IsLoadingModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsLoadingModifier.swift; sourceTree = "<group>"; };
+		8D4A021A2A9049550067EE1E /* RouteResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteResultView.swift; sourceTree = "<group>"; };
+		8D4A021C2A904FE00067EE1E /* RouteMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteMapView.swift; sourceTree = "<group>"; };
+		8D4A021F2A9134FD0067EE1E /* RouteMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteMapViewModel.swift; sourceTree = "<group>"; };
+		8D4A02242A9187D30067EE1E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		8D4A02262A9188730067EE1E /* MapModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -309,6 +331,7 @@
 		8D4A01BA2A8F88330067EE1E /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				8D4A02092A902E1C0067EE1E /* LocationManager */,
 				8D4A01BB2A8F88400067EE1E /* ConnectionsManager */,
 			);
 			path = Managers;
@@ -347,6 +370,7 @@
 			children = (
 				8D4A01B42A8F85910067EE1E /* NetworkServiceInjected.swift */,
 				8D4A01C52A8FB5BC0067EE1E /* ConnectionsManagerInjected.swift */,
+				8D4A02142A90350D0067EE1E /* LocationManagerInjected.swift */,
 			);
 			path = InjectedKeys;
 			sourceTree = "<group>";
@@ -391,6 +415,8 @@
 			isa = PBXGroup;
 			children = (
 				8D4A01F92A9026E40067EE1E /* PointButtonView.swift */,
+				8D4A021A2A9049550067EE1E /* RouteResultView.swift */,
+				8D4A021E2A9134EE0067EE1E /* RouteMapView */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -471,6 +497,7 @@
 			isa = PBXGroup;
 			children = (
 				8D4A01EF2A9021BB0067EE1E /* SearchResultItem.swift */,
+				8D4A02162A90392F0067EE1E /* NotFoundView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -478,8 +505,10 @@
 		8D4A01F12A9022520067EE1E /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
+				8D4A02182A9047C80067EE1E /* IsLoadingModifier.swift */,
 				8D4A01F22A90226A0067EE1E /* CityItemModifier.swift */,
 				8D4A01F42A9024CB0067EE1E /* BlockModifier.swift */,
+				8D4A02262A9188730067EE1E /* MapModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -516,6 +545,58 @@
 				8D4A02062A902B8A0067EE1E /* LocalizationKeys.swift */,
 			);
 			path = Localization;
+			sourceTree = "<group>";
+		};
+		8D4A02092A902E1C0067EE1E /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				8D4A02112A9034460067EE1E /* Shared */,
+				8D4A02122A90346F0067EE1E /* LocationManagerProtocol.swift */,
+				8D4A020A2A902E280067EE1E /* LocationManager.swift */,
+			);
+			path = LocationManager;
+			sourceTree = "<group>";
+		};
+		8D4A02112A9034460067EE1E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				8D4A020F2A9034430067EE1E /* LocationError.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		8D4A021E2A9134EE0067EE1E /* RouteMapView */ = {
+			isa = PBXGroup;
+			children = (
+				8D4A02212A9135140067EE1E /* ViewModel */,
+				8D4A02222A91351A0067EE1E /* View */,
+			);
+			path = RouteMapView;
+			sourceTree = "<group>";
+		};
+		8D4A02212A9135140067EE1E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8D4A021F2A9134FD0067EE1E /* RouteMapViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8D4A02222A91351A0067EE1E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8D4A02232A9187C90067EE1E /* Subviews */,
+				8D4A021C2A904FE00067EE1E /* RouteMapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8D4A02232A9187C90067EE1E /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				8D4A02242A9187D30067EE1E /* MapView.swift */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -650,12 +731,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D4A01FF2A9028F00067EE1E /* PrimaryButtonStyle.swift in Sources */,
+				8D4A02252A9187D30067EE1E /* MapView.swift in Sources */,
 				8D4A01C82A8FB7340067EE1E /* HTTPMethod.swift in Sources */,
+				8D4A02272A9188730067EE1E /* MapModifier.swift in Sources */,
 				8D4A019D2A8F716D0067EE1E /* ConnectionsResponse.swift in Sources */,
 				8D4A01CA2A8FB7D70067EE1E /* ParameterEncoding.swift in Sources */,
 				8D4A01BF2A8F88F50067EE1E /* ConnectionsManager.swift in Sources */,
 				8D4A01F72A9024E80067EE1E /* FontBody.swift in Sources */,
 				8D4A01C32A8F89B30067EE1E /* AnyPublisher+.swift in Sources */,
+				8D4A021D2A904FE00067EE1E /* RouteMapView.swift in Sources */,
+				8D4A02172A90392F0067EE1E /* NotFoundView.swift in Sources */,
 				8D4A01B52A8F85910067EE1E /* NetworkServiceInjected.swift in Sources */,
 				8D4A01B72A8F86D20067EE1E /* InjectedValues.swift in Sources */,
 				8D4A01B22A8F85680067EE1E /* InjectionKey.swift in Sources */,
@@ -663,30 +748,37 @@
 				8D4A01D82A9007AD0067EE1E /* SearchResultView.swift in Sources */,
 				8D4A014E2A8F6E340067EE1E /* TUIApp.swift in Sources */,
 				8D4A01A32A8F716D0067EE1E /* NetworkingRequest.swift in Sources */,
+				8D4A02192A9047C80067EE1E /* IsLoadingModifier.swift in Sources */,
 				8D4A02022A902A580067EE1E /* SearchType.swift in Sources */,
 				8D4A01AC2A8F716D0067EE1E /* NetworkService.swift in Sources */,
 				8D4A01B92A8F87550067EE1E /* DependencyPropertyWrapper.swift in Sources */,
+				8D4A02102A9034430067EE1E /* LocationError.swift in Sources */,
 				8D4A01C62A8FB5BC0067EE1E /* ConnectionsManagerInjected.swift in Sources */,
 				8D4A01E12A901BAC0067EE1E /* BasicTextField.swift in Sources */,
 				8D4A01F32A90226A0067EE1E /* CityItemModifier.swift in Sources */,
 				8D4A01FC2A90270A0067EE1E /* FontLabel.swift in Sources */,
 				8D4A01E62A901E630067EE1E /* ColorNames.swift in Sources */,
+				8D4A02202A9134FD0067EE1E /* RouteMapViewModel.swift in Sources */,
 				8D4A02082A902B8A0067EE1E /* LocalizationKeys.swift in Sources */,
 				8D4A01D22A8FE3660067EE1E /* WelcomeView.swift in Sources */,
 				8D4A01972A8F716D0067EE1E /* NetworkServiceProtocol.swift in Sources */,
 				8D4A01EB2A901EF10067EE1E /* IconView.swift in Sources */,
 				8D4A01AA2A8F716D0067EE1E /* NetworkStatusCode.swift in Sources */,
 				8D4A01E82A901E960067EE1E /* IconNames.swift in Sources */,
+				8D4A021B2A9049550067EE1E /* RouteResultView.swift in Sources */,
 				8D4A01E42A901BFB0067EE1E /* CGFloat+.swift in Sources */,
 				8D4A01A92A8F716D0067EE1E /* NetworkError.swift in Sources */,
 				8D4A01F02A9021BB0067EE1E /* SearchResultItem.swift in Sources */,
+				8D4A02132A90346F0067EE1E /* LocationManagerProtocol.swift in Sources */,
 				8D4A01FA2A9026E40067EE1E /* PointButtonView.swift in Sources */,
 				8D4A01DC2A90144F0067EE1E /* SearchResultViewModel.swift in Sources */,
 				8D4A01D42A8FF5890067EE1E /* WelcomeViewModel.swift in Sources */,
 				8D4A019E2A8F716D0067EE1E /* ConnectionsRequest.swift in Sources */,
 				8D4A01A52A8F716D0067EE1E /* RequestDescriptor.swift in Sources */,
+				8D4A02152A90350D0067EE1E /* LocationManagerInjected.swift in Sources */,
 				8D4A01AB2A8F716D0067EE1E /* NetworkConstants.swift in Sources */,
 				8D4A01BD2A8F88760067EE1E /* ConnectionsManagerProtocol.swift in Sources */,
+				8D4A020B2A902E290067EE1E /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -859,6 +951,8 @@
 				DEVELOPMENT_TEAM = R3L829L3V3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need just see your city for relevant searching";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need just see your city for relevant searching";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -888,6 +982,8 @@
 				DEVELOPMENT_TEAM = R3L829L3V3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need just see your city for relevant searching";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need just see your city for relevant searching";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

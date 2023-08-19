@@ -1,3 +1,6 @@
 "from" = "From";
 "to" = "To";
 "showButtonTitle" = "Show Cheapest";
+"notFound" = "Not found";
+"price" = "Price";
+"cheapestTitle" = "Cheapest result";
