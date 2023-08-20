@@ -62,6 +62,9 @@
 		8D4A02202A9134FD0067EE1E /* RouteMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A021F2A9134FD0067EE1E /* RouteMapViewModel.swift */; };
 		8D4A02252A9187D30067EE1E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A02242A9187D30067EE1E /* MapView.swift */; };
 		8D4A02272A9188730067EE1E /* MapModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A02262A9188730067EE1E /* MapModifier.swift */; };
+		8D4A02292A921B000067EE1E /* WelcomeViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A02282A921B000067EE1E /* WelcomeViewBuilder.swift */; };
+		8D4A022B2A921C160067EE1E /* SearchResultViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A022A2A921C160067EE1E /* SearchResultViewBuilder.swift */; };
+		8D4A022D2A921D1D0067EE1E /* RouteMapViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A022C2A921D1D0067EE1E /* RouteMapViewBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +143,9 @@
 		8D4A021F2A9134FD0067EE1E /* RouteMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteMapViewModel.swift; sourceTree = "<group>"; };
 		8D4A02242A9187D30067EE1E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		8D4A02262A9188730067EE1E /* MapModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModifier.swift; sourceTree = "<group>"; };
+		8D4A02282A921B000067EE1E /* WelcomeViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewBuilder.swift; sourceTree = "<group>"; };
+		8D4A022A2A921C160067EE1E /* SearchResultViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewBuilder.swift; sourceTree = "<group>"; };
+		8D4A022C2A921D1D0067EE1E /* RouteMapViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteMapViewBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -399,6 +405,7 @@
 			children = (
 				8D4A01D52A9007980067EE1E /* Subviews */,
 				8D4A01D12A8FE3660067EE1E /* WelcomeView.swift */,
+				8D4A02282A921B000067EE1E /* WelcomeViewBuilder.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -443,6 +450,7 @@
 			children = (
 				8D4A01EC2A9021180067EE1E /* Subviews */,
 				8D4A01D72A9007AD0067EE1E /* SearchResultView.swift */,
+				8D4A022A2A921C160067EE1E /* SearchResultViewBuilder.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -587,6 +595,7 @@
 			children = (
 				8D4A02232A9187C90067EE1E /* Subviews */,
 				8D4A021C2A904FE00067EE1E /* RouteMapView.swift */,
+				8D4A022C2A921D1D0067EE1E /* RouteMapViewBuilder.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -733,6 +742,7 @@
 				8D4A01FF2A9028F00067EE1E /* PrimaryButtonStyle.swift in Sources */,
 				8D4A02252A9187D30067EE1E /* MapView.swift in Sources */,
 				8D4A01C82A8FB7340067EE1E /* HTTPMethod.swift in Sources */,
+				8D4A02292A921B000067EE1E /* WelcomeViewBuilder.swift in Sources */,
 				8D4A02272A9188730067EE1E /* MapModifier.swift in Sources */,
 				8D4A019D2A8F716D0067EE1E /* ConnectionsResponse.swift in Sources */,
 				8D4A01CA2A8FB7D70067EE1E /* ParameterEncoding.swift in Sources */,
@@ -754,6 +764,7 @@
 				8D4A01B92A8F87550067EE1E /* DependencyPropertyWrapper.swift in Sources */,
 				8D4A02102A9034430067EE1E /* LocationError.swift in Sources */,
 				8D4A01C62A8FB5BC0067EE1E /* ConnectionsManagerInjected.swift in Sources */,
+				8D4A022B2A921C160067EE1E /* SearchResultViewBuilder.swift in Sources */,
 				8D4A01E12A901BAC0067EE1E /* BasicTextField.swift in Sources */,
 				8D4A01F32A90226A0067EE1E /* CityItemModifier.swift in Sources */,
 				8D4A01FC2A90270A0067EE1E /* FontLabel.swift in Sources */,
@@ -767,6 +778,7 @@
 				8D4A01E82A901E960067EE1E /* IconNames.swift in Sources */,
 				8D4A021B2A9049550067EE1E /* RouteResultView.swift in Sources */,
 				8D4A01E42A901BFB0067EE1E /* CGFloat+.swift in Sources */,
+				8D4A022D2A921D1D0067EE1E /* RouteMapViewBuilder.swift in Sources */,
 				8D4A01A92A8F716D0067EE1E /* NetworkError.swift in Sources */,
 				8D4A01F02A9021BB0067EE1E /* SearchResultItem.swift in Sources */,
 				8D4A02132A90346F0067EE1E /* LocationManagerProtocol.swift in Sources */,

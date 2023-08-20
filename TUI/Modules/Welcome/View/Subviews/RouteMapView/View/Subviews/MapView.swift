@@ -31,7 +31,6 @@ struct MapView: UIViewRepresentable {
     }
 
     private func setupData(_ view: MKMapView) {
-        let span = MKCoordinateSpan(latitudeDelta: 1.0, longitudeDelta: 1.0)
         if let region = region {
             view.region = region
         }

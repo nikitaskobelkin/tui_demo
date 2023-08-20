@@ -45,6 +45,3 @@ final class LocationManager: NSObject, LocationManagerProtocol, CLLocationManage
         }
     }
 }
-
-extension LocationManager {
-}

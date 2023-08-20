@@ -2,8 +2,8 @@ import SwiftUI
 
 struct WelcomeView: View {
     @State private var searchType: SearchType?
-    @StateObject private var viewModel = WelcomeViewModel()
-
+    @StateObject var viewModel: WelcomeViewModel
+    
     var body: some View {
         ZStack {
             Color.background.ignoresSafeArea(.all)
@@ -48,11 +48,9 @@ struct WelcomeView: View {
                 .padding(.all, .x2)
             }
             .sheet(item: $searchType) { type in
-                SearchResultView(
-                    viewModel: SearchResultViewModel(
-                        selected: type == .from ? $viewModel.from : $viewModel.to,
-                        cities: viewModel.cities
-                    ),
+                SearchResultViewBuilder.build(
+                    selected: type == .from ? $viewModel.from : $viewModel.to,
+                    cities: viewModel.cities,
                     title: type.title
                 )
             }

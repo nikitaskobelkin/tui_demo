@@ -4,7 +4,7 @@ import SwiftUI
 struct TUIApp: App {
     var body: some Scene {
         WindowGroup {
-            WelcomeView()
+            WelcomeViewBuilder.build()
         }
     }
 }

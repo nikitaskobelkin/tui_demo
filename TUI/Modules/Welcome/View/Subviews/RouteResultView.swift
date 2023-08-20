@@ -22,11 +22,9 @@ struct RouteResultView: View {
                     Text("\(Localization.price.value): \(route.price)")
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .modifier(FontBody(weight: .semibold))
-                    RouteMapView(
-                        viewModel: RouteMapViewModel(
-                            from: route.coordinates.from,
-                            to: route.coordinates.to
-                        )
+                    RouteMapViewBuilder.build(
+                        from: route.coordinates.from,
+                        to: route.coordinates.to
                     )
                 } else {
                     NotFoundView()
