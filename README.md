@@ -1,5 +1,12 @@
 # TUI Demo
 
+## Preview
+
+| Route Dark | Route Light | Search Result | Empty Search Result |
+| ------------- | ------------- | ------------- | ------------- |
+| ![Simulator Screenshot - iPhone 14 Pro - 2023-08-20 at 15 04 27](https://github.com/nikitaskobelkin/tui_demo/assets/47354437/f97d1f96-a824-4300-bd69-839194cf0ae9)  | ![Simulator Screenshot - iPhone 14 Pro - 2023-08-20 at 15 04 21](https://github.com/nikitaskobelkin/tui_demo/assets/47354437/04467d0a-12ad-40d4-8b01-045586f09fdf) | ![Simulator Screenshot - iPhone 14 Pro - 2023-08-20 at 15 04 45](https://github.com/nikitaskobelkin/tui_demo/assets/47354437/11a1d642-8f44-4530-a8fd-5d5bbd44b01f)  | ![Simulator Screenshot - iPhone 14 Pro - 2023-08-20 at 15 04 52](https://github.com/nikitaskobelkin/tui_demo/assets/47354437/d34fed27-cb40-4ae1-85bf-82dc36090dfe) |
+
+
 ## Building the App
 
 1. Clone the repository to your local machine.
@@ -27,6 +34,9 @@ This app includes 2 main modules:
 ## Auto-tests
 
 This app is covered by major integration and unit tests for main entities and business logic.
+
+<img width="277" alt="image" src="https://github.com/nikitaskobelkin/tui_demo/assets/47354437/44c0ffad-252f-4aed-aa35-79994e96ce2c">
+
 
 ## Libraries Used
 
