@@ -10,7 +10,6 @@
 		8D4A014E2A8F6E340067EE1E /* TUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A014D2A8F6E340067EE1E /* TUIApp.swift */; };
 		8D4A01522A8F6E350067EE1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D4A01512A8F6E350067EE1E /* Assets.xcassets */; };
 		8D4A01552A8F6E350067EE1E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D4A01542A8F6E350067EE1E /* Preview Assets.xcassets */; };
-		8D4A015F2A8F6E350067EE1E /* TUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A015E2A8F6E350067EE1E /* TUITests.swift */; };
 		8D4A01692A8F6E350067EE1E /* TUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A01682A8F6E350067EE1E /* TUIUITests.swift */; };
 		8D4A016B2A8F6E350067EE1E /* TUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A016A2A8F6E350067EE1E /* TUIUITestsLaunchTests.swift */; };
 		8D4A01972A8F716D0067EE1E /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A01782A8F716D0067EE1E /* NetworkServiceProtocol.swift */; };
@@ -65,6 +64,12 @@
 		8D4A02292A921B000067EE1E /* WelcomeViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A02282A921B000067EE1E /* WelcomeViewBuilder.swift */; };
 		8D4A022B2A921C160067EE1E /* SearchResultViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A022A2A921C160067EE1E /* SearchResultViewBuilder.swift */; };
 		8D4A022D2A921D1D0067EE1E /* RouteMapViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A022C2A921D1D0067EE1E /* RouteMapViewBuilder.swift */; };
+		8D4A02392A921DF70067EE1E /* TestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A022F2A921DF70067EE1E /* TestConstants.swift */; };
+		8D4A023D2A921DF70067EE1E /* ConnectionsManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A02352A921DF70067EE1E /* ConnectionsManagerTests.swift */; };
+		8D4A023E2A921DF70067EE1E /* WelcomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A02372A921DF70067EE1E /* WelcomeViewModelTests.swift */; };
+		8D4A02452A921E320067EE1E /* FakeSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A02422A921E320067EE1E /* FakeSession.swift */; };
+		8D4A02472A921E320067EE1E /* MockNetwrokService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A02442A921E320067EE1E /* MockNetwrokService.swift */; };
+		8D4A024A2A92258C0067EE1E /* MockLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A02492A92258C0067EE1E /* MockLocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,7 +95,6 @@
 		8D4A01512A8F6E350067EE1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D4A01542A8F6E350067EE1E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8D4A015A2A8F6E350067EE1E /* TUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D4A015E2A8F6E350067EE1E /* TUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TUITests.swift; sourceTree = "<group>"; };
 		8D4A01642A8F6E350067EE1E /* TUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D4A01682A8F6E350067EE1E /* TUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TUIUITests.swift; sourceTree = "<group>"; };
 		8D4A016A2A8F6E350067EE1E /* TUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -146,6 +150,12 @@
 		8D4A02282A921B000067EE1E /* WelcomeViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewBuilder.swift; sourceTree = "<group>"; };
 		8D4A022A2A921C160067EE1E /* SearchResultViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewBuilder.swift; sourceTree = "<group>"; };
 		8D4A022C2A921D1D0067EE1E /* RouteMapViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteMapViewBuilder.swift; sourceTree = "<group>"; };
+		8D4A022F2A921DF70067EE1E /* TestConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestConstants.swift; sourceTree = "<group>"; };
+		8D4A02352A921DF70067EE1E /* ConnectionsManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionsManagerTests.swift; sourceTree = "<group>"; };
+		8D4A02372A921DF70067EE1E /* WelcomeViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewModelTests.swift; sourceTree = "<group>"; };
+		8D4A02422A921E320067EE1E /* FakeSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeSession.swift; sourceTree = "<group>"; };
+		8D4A02442A921E320067EE1E /* MockNetwrokService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockNetwrokService.swift; sourceTree = "<group>"; };
+		8D4A02492A92258C0067EE1E /* MockLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,7 +228,10 @@
 		8D4A015D2A8F6E350067EE1E /* TUITests */ = {
 			isa = PBXGroup;
 			children = (
-				8D4A015E2A8F6E350067EE1E /* TUITests.swift */,
+				8D4A02342A921DF70067EE1E /* IntegrationTests */,
+				8D4A02302A921DF70067EE1E /* MockServices */,
+				8D4A022E2A921DF70067EE1E /* Shared */,
+				8D4A02362A921DF70067EE1E /* ViewModelsTests */,
 			);
 			path = TUITests;
 			sourceTree = "<group>";
@@ -608,6 +621,64 @@
 			path = Subviews;
 			sourceTree = "<group>";
 		};
+		8D4A022E2A921DF70067EE1E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				8D4A022F2A921DF70067EE1E /* TestConstants.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		8D4A02302A921DF70067EE1E /* MockServices */ = {
+			isa = PBXGroup;
+			children = (
+				8D4A02482A92257B0067EE1E /* MockLocationManager */,
+				8D4A02402A921E320067EE1E /* MockNetworkService */,
+			);
+			path = MockServices;
+			sourceTree = "<group>";
+		};
+		8D4A02342A921DF70067EE1E /* IntegrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				8D4A02352A921DF70067EE1E /* ConnectionsManagerTests.swift */,
+			);
+			path = IntegrationTests;
+			sourceTree = "<group>";
+		};
+		8D4A02362A921DF70067EE1E /* ViewModelsTests */ = {
+			isa = PBXGroup;
+			children = (
+				8D4A02372A921DF70067EE1E /* WelcomeViewModelTests.swift */,
+			);
+			path = ViewModelsTests;
+			sourceTree = "<group>";
+		};
+		8D4A02402A921E320067EE1E /* MockNetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				8D4A02412A921E320067EE1E /* Shared */,
+				8D4A02442A921E320067EE1E /* MockNetwrokService.swift */,
+			);
+			path = MockNetworkService;
+			sourceTree = "<group>";
+		};
+		8D4A02412A921E320067EE1E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				8D4A02422A921E320067EE1E /* FakeSession.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		8D4A02482A92257B0067EE1E /* MockLocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				8D4A02492A92258C0067EE1E /* MockLocationManager.swift */,
+			);
+			path = MockLocationManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -798,7 +869,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D4A015F2A8F6E350067EE1E /* TUITests.swift in Sources */,
+				8D4A02452A921E320067EE1E /* FakeSession.swift in Sources */,
+				8D4A023E2A921DF70067EE1E /* WelcomeViewModelTests.swift in Sources */,
+				8D4A024A2A92258C0067EE1E /* MockLocationManager.swift in Sources */,
+				8D4A02472A921E320067EE1E /* MockNetwrokService.swift in Sources */,
+				8D4A02392A921DF70067EE1E /* TestConstants.swift in Sources */,
+				8D4A023D2A921DF70067EE1E /* ConnectionsManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

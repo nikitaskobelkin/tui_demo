@@ -37,7 +37,12 @@ final class NetworkService: NetworkServiceProtocol {
                 let object = try JSONDecoder().decode(T.ResponseType.self, from: $0)
                 return object
             }
-            .mapError({ NetworkError.custom($0) })
+            .mapError({
+                guard let error = $0 as? NetworkError else {
+                    return NetworkError.custom($0)
+                }
+                return error
+            })
             .eraseToAnyPublisher()
     }
 
