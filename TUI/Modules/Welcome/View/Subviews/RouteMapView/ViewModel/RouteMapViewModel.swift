@@ -16,16 +16,14 @@ final class RouteMapViewModel: ObservableObject {
     private func setupMap() {
         let centerLatitude = to.latitude
         let centerLongitude = to.longitude
-        let span = MKCoordinateSpan(
-            latitudeDelta: abs(to.latitude - from.latitude) * .x * 0.3,
-            longitudeDelta: abs(to.longitude - from.longitude) * .x * 0.3
-        )
+        let meters: Double = 1000 * 1000
         region = MKCoordinateRegion(
             center: CLLocationCoordinate2D(
                 latitude: centerLatitude,
                 longitude: centerLongitude
             ),
-            span: span
+            latitudinalMeters: meters,
+            longitudinalMeters: meters
         )
         points = [from, to].map {
             let point = MKPointAnnotation()
